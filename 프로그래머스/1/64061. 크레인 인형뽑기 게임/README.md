@@ -1,6 +1,6 @@
 # [level 1] 크레인 인형뽑기 게임 - 64061 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64061#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64061) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 11일 13:49:30
+2024년 04월 11일 13:50:06
 
 ### 문제 설명
 
