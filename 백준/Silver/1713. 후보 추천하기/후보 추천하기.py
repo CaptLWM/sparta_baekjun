@@ -23,10 +23,12 @@ for idx, num in enumerate(students):
     while choice:
         # print('==',choice)
         cnt, old_idx, std_num = heapq.heappop(choice)
-        # print('cnt, old_idx, std_num',cnt, old_idx, std_num)
-        cnt += 1 if std_num == num else 0
+        # 투표 시작
+        if std_num == num:
+            cnt += 1
         heapq.heappush(temp_list,(cnt,old_idx,std_num))
-        temp += std_num == num
+        if std_num == num:
+            temp += 1
     if not temp and len(temp_list)>=n:
         heapq.heappop(temp_list)
     if not temp:
