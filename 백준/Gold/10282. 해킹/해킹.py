@@ -2,7 +2,7 @@ import heapq
 import sys
 from heapq import *
 from collections import *
-# sys.stdin=open('input2.txt')
+#sys.stdin=open('input2.txt')
 
 # t : testcase 수
 def dijikstra(graph, start):
@@ -38,10 +38,8 @@ for _ in range(t):
     # print(graph)
     distance = dijikstra(graph, c)
     count=0
-    max_dist=0
+    temp = [i for i in distance if i != float('inf')]
     for dist in distance:
         if dist!=float('inf'):
             count+=1
-            max_dist = max(max_dist, dist)
-
-    print(count, max_dist)
+    print(count, max(temp))
