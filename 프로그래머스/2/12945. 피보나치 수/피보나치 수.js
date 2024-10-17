@@ -1,12 +1,12 @@
 function solution(n) {
     var answer = 0;
     // 시간초과
-    // function fibo(n){
-    //     if(n===0) return 0;
-    //     if(n===1) return 1;
-    //     return fibo(n-2)+fibo(n-1)
-    // }
-    // answer = fibo(n)%1234567
+//     function fibo(n){
+//         if(n===0) return 0;
+//         if(n===1) return 1;
+//         return (fibo(n-2)+fibo(n-1))%1234567
+//     }
+//     answer = fibo(n)
     
     // DP
     function fibo(n) {
