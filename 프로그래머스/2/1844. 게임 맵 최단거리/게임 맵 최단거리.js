@@ -14,9 +14,10 @@ function solution(maps) {
     const queue = [[0,0,1]]  // [x,y,거리]
     
     // 방문여부 체크
+    // 배열을 따로 두지 않고 배열 값을 0으로 변경하여 방문여부 체크
     // const visited = Array.from({length:n},()=>Array(m).fill(false));
     // 시작점
-    maps[0][0] = 0
+    maps[0][0] = -1
     
     // 경로 탐색 시작
     while (queue.length) {
@@ -34,7 +35,7 @@ function solution(maps) {
             const ny = y+dy;
             
             if(nx>=0 && nx<n && ny>=0 && ny<m && maps[nx][ny] === 1 ) {
-                maps[nx][ny] = 0;
+                maps[nx][ny] = -1;
                 queue.push([nx, ny, distance +1])
             }
         }
